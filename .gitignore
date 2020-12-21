@@ -2,10 +2,7 @@
 
 # dependencies
 /node_modules
-/package-lock.josn
-/.gitignore
-/.eslintcache
-/package.josn
+
 /.pnp
 .pnp.js
 
