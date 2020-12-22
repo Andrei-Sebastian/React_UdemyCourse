@@ -1,7 +1,8 @@
 import './App.css';
-import Person from './Person/Person'
+import Person from './Person/Person';
 import React ,{Component} from 'react';
 import styled from 'styled-components';
+import PostComponent from './PostComponent/PostComponsnt';
 
 const StyledButton = styled.button`
   background-color: ${props => props.alt ? 'red' : 'green'};
@@ -91,10 +92,10 @@ class App extends Component{
         <h1>My name is Jojo</h1>
         <p className={classes.join(" ")}>This is really working!</p>
         <StyledButton 
-          alt={this.state.showPersons}
           onClick={this.togglePersonsHandler}>Toggle persons
         </StyledButton>
         {persons}
+        <PostComponent></PostComponent>
       </div>
     );
   }
