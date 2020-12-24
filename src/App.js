@@ -3,6 +3,7 @@ import Person from './Person/Person';
 import React ,{Component} from 'react';
 import styled from 'styled-components';
 import PostComponent from './PostComponent/PostComponsnt';
+import SimpleMap from './Map/Map'
 
 const StyledButton = styled.button`
   background-color: ${props => props.alt ? 'red' : 'green'};
@@ -26,7 +27,8 @@ class App extends Component{
       { id: '3', name: 'George', age: 28}
     ],
     otherState: "some other value",
-    showPersons: false
+    showPersons: false,
+    
   }
 
   // change name
@@ -89,13 +91,17 @@ class App extends Component{
 
     return (
       <div className="App">
-        <h1>My name is Jojo</h1>
-        <p className={classes.join(" ")}>This is really working!</p>
+        <h1>Style</h1>
+        {/* <p className={classes.join(" ")}>This is really working!</p>
         <StyledButton 
           onClick={this.togglePersonsHandler}>Toggle persons
         </StyledButton>
-        {persons}
-        <PostComponent></PostComponent>
+        {persons} */}
+        <PostComponent/>
+        <PostComponent/>
+        <PostComponent/>
+        <PostComponent/>
+        <h1>.</h1>
       </div>
     );
   }
