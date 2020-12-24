@@ -4,6 +4,7 @@ import React ,{Component} from 'react';
 import styled from 'styled-components';
 import PostComponent from './PostComponent/PostComponsnt';
 import SimpleMap from './Map/Map'
+import NavBar from './NavigationMenu/NavBar'
 
 const StyledButton = styled.button`
   background-color: ${props => props.alt ? 'red' : 'green'};
@@ -28,7 +29,7 @@ class App extends Component{
     ],
     otherState: "some other value",
     showPersons: false,
-    
+
   }
 
   // change name
@@ -91,7 +92,7 @@ class App extends Component{
 
     return (
       <div className="App">
-        <h1>Style</h1>
+        {/* <NavBar/> */}
         {/* <p className={classes.join(" ")}>This is really working!</p>
         <StyledButton 
           onClick={this.togglePersonsHandler}>Toggle persons

@@ -62,10 +62,15 @@
         /* background:blue ; */
         display: flex;
         justify-content: center;
-        width: 100px;
+        width: 200px;
         margin: 0 auto;
       }
       /* .imageLike {
         background:green ;
       }
        */
+       .likeBtn:hover{
+        border-radius: 20px;
+        background-color: #f7fdff;
+        border: 1px solid #e4f1f5;
+      }
