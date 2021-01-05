@@ -2,9 +2,6 @@ import './App.css';
 import Person from './Person/Person';
 import React ,{Component} from 'react';
 import styled from 'styled-components';
-import PostComponent from './PostComponent/PostComponsnt';
-import SimpleMap from './Map/Map'
-import NavBar from './NavigationMenu/NavBar'
 
 const StyledButton = styled.button`
   background-color: ${props => props.alt ? 'red' : 'green'};
@@ -41,7 +38,6 @@ class App extends Component{
     };
 
     //const person = Object.assign({}, this.state.persons[personIndex]);
-    //console.log(event.target.value);
     person.name = event.target.value;
 
     const persons = [...this.state.persons];
@@ -92,17 +88,11 @@ class App extends Component{
 
     return (
       <div className="App">
-        {/* <NavBar/> */}
-        {/* <p className={classes.join(" ")}>This is really working!</p>
+        <p className={classes.join(" ")}>This is really working!</p>
         <StyledButton 
           onClick={this.togglePersonsHandler}>Toggle persons
         </StyledButton>
-        {persons} */}
-        <PostComponent/>
-        <PostComponent/>
-        <PostComponent/>
-        <PostComponent/>
-        <h1>.</h1>
+        {persons}
       </div>
     );
   }
